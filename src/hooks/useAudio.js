@@ -6,7 +6,7 @@ export const useAudio = (url) => {
 
     const toggle = () => {
         setPlaying(!playing);
-        window.open("https://discord.gg/C5JaExrVCX", "_blank");
+        window.open("https://discord.gg/Be39PhyU", "_blank");
     }
 
     useEffect(() => {
