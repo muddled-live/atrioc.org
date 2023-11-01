@@ -1,7 +1,6 @@
 import { useAudio } from "./hooks/useAudio";
 
 import DiscordButton from "./components/DiscordButton";
-import LandingLogo from "./assets/LandingLogo.svg";
 import MoooAudio from "./assets/mooo_audio.wav";
 
 const Footer = () => {
