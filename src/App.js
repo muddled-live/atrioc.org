@@ -24,14 +24,14 @@ const Footer = () => {
     )
 }
 
-const Content = () => {
+const Content = ({ toggle }) => {
     return (
         <div className="w-full pb-24">
             <div className="max-w-[750px]">
                 <div className="flex flex-col items-start gap-4 w-full">
                     <p className="text-6xl font-black">DEFEND THE RIGHTS OF ALL CHATTERS GLOBALLY</p>
-                    <p className="text-2xl font-black text-justify">Atrioc Chat Labor Union's goal is simple. Criminal justice, chatter's right to message freely, and chatter's right to vote - these are crucial issues, and we're standing up for our freedoms against a corrupt streamer. Join today and fuel our fight back in Twitch chat, Discord channels, and YouTube comment sections.</p>
-                    <DiscordButton theme="light" />
+                    <p className="text-2xl font-black">Atrioc Chat Labor Union's goal is simple. Criminal justice, chatter's right to message freely, and chatter's right to vote - these are crucial issues, and we're standing up for our freedoms against a corrupt streamer. Join today and fuel our fight back in Twitch chat, Discord channels, and YouTube comment sections.</p>
+                    <DiscordButton theme="light" toggle={toggle} />
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ function App() {
                     </svg>
                     <DiscordButton theme="dark" toggle={toggle} />
                 </div>
-                <Content />
+                <Content toggle={toggle} />
             </div>
             <Footer />
         </div>
