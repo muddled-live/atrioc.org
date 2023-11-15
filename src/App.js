@@ -31,7 +31,7 @@ const Footer = () => {
               />
             </svg>
             <div className="flex items-center gap-2">
-              <p className="text-[#2B2B2B] leading-trim text-cap font-black text-6xl mobile:text-5xl tracking-tight">
+              <p className="text-[#2B2B2B] leading-trim text-cap font-black text-6xl max-sm:text-5xl tracking-tight">
                 © 2023
               </p>
             </div>
@@ -47,10 +47,10 @@ const Content = ({ toggle }) => {
     <div className="w-full pb-24">
       <div className="max-w-[750px]">
         <div className="flex flex-col items-start gap-4 w-full">
-          <p className="text-6xl font-black mobile:text-5xl">
+          <p className="text-6xl font-black max-sm:text-5xl">
             DEFEND THE RIGHTS OF ALL CHATTERS GLOBALLY
           </p>
-          <p className="text-2xl font-black mobile:text-1xl">
+          <p className="text-2xl font-black max-sm:text-1xl">
             Atrioc Chat Labor Union's goal is simple. Criminal justice,
             chatter's right to message freely, and chatter's right to vote -
             these are crucial issues, and we're standing up for our freedoms
@@ -109,7 +109,7 @@ function App() {
               fill="white"
             />
           </svg>
-          <div className="mobile:hidden">
+          <div className="max-sm:hidden">
           <DiscordButton theme="dark" toggle={toggle} svgText="DISCORD" />
           </div>
         </div>
