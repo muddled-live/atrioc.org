@@ -1,4 +1,4 @@
-const MusicButton = ({ theme, svgText }) => {
+const MusicButton = ({ theme, svgText, link }) => {
   let fill;
   let text;
   let hoverFill;
@@ -13,7 +13,7 @@ const MusicButton = ({ theme, svgText }) => {
   }
 
   const clickUrl = () => {
-    window.open("https://www.youtube.com/@ACLURecords", "_blank");
+    window.open(link, "_blank");
   };
 
   return (
