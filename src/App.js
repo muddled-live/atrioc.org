@@ -14,7 +14,7 @@ const Footer = () => {
                         src="https://cdn.betterttv.net/emote/5ff10db95ae5852e4154a2c3/3x.webp"
                         alt="MOOOO, 3x"
                     />
-                    <p className="hidden md:block font-black text-6xl tracking-tighter text-[#2B2B2B]">
+                    <p className="hidden sm:text-5xl md:block font-black text-6xl tracking-tighter text-[#2B2B2B]">
                         “KEEP ON MOOING”
                     </p>
                     <div className="flex flex-col items-center gap-2">
@@ -31,7 +31,7 @@ const Footer = () => {
                             />
                         </svg>
                         <div className="flex items-center gap-2">
-                            <p className="text-[#2B2B2B] leading-trim text-cap font-black text-6xl tracking-tight">
+                            <p className="text-[#2B2B2B] leading-trim text-cap font-black text-6xl max-sm:text-5xl tracking-tight">
                                 © 2023
                             </p>
                         </div>
@@ -47,10 +47,10 @@ const Content = ({ toggle }) => {
         <div className="w-full pb-24">
             <div className="max-w-[750px]">
                 <div className="flex flex-col items-start gap-4 w-full">
-                    <p className="text-6xl font-black">
+                    <p className="text-6xl font-black max-sm:text-5xl">
                         DEFEND THE RIGHTS OF ALL CHATTERS GLOBALLY
                     </p>
-                    <p className="text-2xl font-black">
+                    <p className="text-2xl font-black max-sm:text-1xl">
                         Atrioc Chat Labor Union's goal is simple. Criminal justice,
                         chatter's right to message freely, and chatter's right to vote -
                         these are crucial issues, and we're standing up for our freedoms
@@ -59,7 +59,8 @@ const Content = ({ toggle }) => {
                     </p>
                     <div class="button-container">
                         <DiscordButton theme="light" toggle={toggle} svgText="DISCORD" />
-                        <MusicButton theme="light" svgText="ATRIARCHY STUDIOS" />
+                        <YoutubeButton theme="light" svgText="ATRIARCHY STUDIOS" link="https://www.youtube.com/@ACLURecords" />
+                        <YoutubeButton theme="light" svgText="IMM" link="https://www.youtube.com/channel/UCxIkgQxxh_hw-ZVJyAUuNlw" />
                     </div>
                 </div>
             </div>
@@ -108,7 +109,9 @@ function App() {
                             fill="white"
                         />
                     </svg>
-                    <DiscordButton theme="dark" toggle={toggle} svgText="DISCORD" />
+                    <div className="max-sm:hidden">
+                        <DiscordButton theme="dark" toggle={toggle} svgText="DISCORD" />
+                    </div>
                 </div>
                 <Content toggle={toggle} />
             </div>
