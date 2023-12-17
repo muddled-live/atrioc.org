@@ -24,6 +24,13 @@ const Content = ({ toggle }) => {
                         <DiscordButton toggle={toggle} svgText="DISCORD" />
                         <Button svgText="ATRIARCHY STUDIOS" link="https://www.youtube.com/@ACLURecords" />
                         <Button svgText="IMM" link="https://www.youtube.com/channel/UCxIkgQxxh_hw-ZVJyAUuNlw" />
+
+                        <a
+                            className={`md:hidden flex px-10 py-4 justify-center items-center gap-4 bg-[#2B2B2B] text-white hover:bg-[#353535] font-black md:text-2xl sm:text-base rounded-md`}
+                            href={"https://aclucrossword.org/"}
+                        >
+                            ACLU CROSSWORD
+                        </a>
                     </div>
                 </div>
             </div>
