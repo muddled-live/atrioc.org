@@ -1,16 +1,4 @@
-const MusicButton = ({ theme, svgText, link }) => {
-    let fill;
-    let text;
-    let hoverFill;
-    if (theme === "light") {
-        text = "white";
-        fill = "bg-[#2B2B2B]";
-        hoverFill = "hover:bg-[#353535]";
-    } else {
-        text = "#2B2B2B";
-        fill = "bg-white";
-        hoverFill = "hover:bg-[#f7f4fc]";
-    }
+const Button = ({ svgText, link }) => {
 
     const clickUrl = () => {
         window.open(link, "_blank");
@@ -18,7 +6,7 @@ const MusicButton = ({ theme, svgText, link }) => {
 
     return (
         <button
-            className={`flex px-10 py-4 justify-center items-center gap-4 ${fill} text-[${text}] ${hoverFill} font-black md:text-2xl sm:text-base rounded-md`}
+            className={`flex px-10 py-4 justify-center items-center gap-4 bg-[#2B2B2B] text-white hover:bg-[#353535] font-black md:text-2xl sm:text-base rounded-md`}
             onClick={clickUrl}
         >
             <svg
@@ -44,4 +32,4 @@ const MusicButton = ({ theme, svgText, link }) => {
     );
 };
 
-export default MusicButton;
+export default Button;
